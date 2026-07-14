@@ -1,4 +1,4 @@
-pytest-homeassistant-custom-component
+pytest-homeassistant-custom-component==0.13.109
 pytest-asyncio
 tzdata
 hassil==1.6.1
