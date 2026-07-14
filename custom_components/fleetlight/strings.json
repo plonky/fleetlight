@@ -1,0 +1,41 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add a Fleetlight zone",
+        "description": "A zone is an ordered set of lights that effects run across. Pick an Area for a quick default order, or pick lights individually (in the order effects should flow through them) to override it.",
+        "data": {
+          "name": "Zone name",
+          "area_id": "Area (optional, sets default order)",
+          "light_entity_ids": "Lights, in order (optional, overrides Area order)"
+        }
+      }
+    },
+    "error": {
+      "no_lights": "Choose an Area or at least one light."
+    },
+    "abort": {
+      "already_configured": "A zone with this name is already configured."
+    }
+  },
+  "services": {
+    "start_effect": {
+      "name": "Start effect",
+      "description": "Start a Fleetlight effect on a zone, optionally tuning its parameters.",
+      "fields": {
+        "effect": {
+          "name": "Effect",
+          "description": "Name of the built-in effect to run."
+        },
+        "params": {
+          "name": "Parameters",
+          "description": "Effect-specific tuning parameters."
+        }
+      }
+    },
+    "stop_effect": {
+      "name": "Stop effect",
+      "description": "Stop whatever effect is currently running on a zone."
+    }
+  }
+}

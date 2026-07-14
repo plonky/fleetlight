@@ -1,0 +1,32 @@
+start_effect:
+  name: Start effect
+  description: Start a Fleetlight effect on a zone, optionally tuning its parameters.
+  target:
+    entity:
+      integration: fleetlight
+      domain: switch
+  fields:
+    effect:
+      name: Effect
+      description: Name of the built-in effect to run (e.g. "wave").
+      required: true
+      selector:
+        select:
+          options:
+            - wave
+    params:
+      name: Parameters
+      description: >
+        Effect-specific tuning parameters, e.g. speed, width_fraction,
+        color, min_brightness, max_brightness for the wave effect.
+      required: false
+      selector:
+        object:
+
+stop_effect:
+  name: Stop effect
+  description: Stop whatever effect is currently running on a zone.
+  target:
+    entity:
+      integration: fleetlight
+      domain: switch
