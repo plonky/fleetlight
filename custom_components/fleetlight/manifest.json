@@ -1,0 +1,12 @@
+{
+  "domain": "fleetlight",
+  "name": "Fleetlight",
+  "codeowners": ["@plonky"],
+  "config_flow": true,
+  "documentation": "https://github.com/plonky/fleetlight",
+  "issue_tracker": "https://github.com/plonky/fleetlight/issues",
+  "iot_class": "local_push",
+  "integration_type": "hub",
+  "requirements": [],
+  "version": "0.1.0"
+}

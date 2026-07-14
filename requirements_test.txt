@@ -1,0 +1,5 @@
+pytest-homeassistant-custom-component
+pytest-asyncio
+tzdata
+hassil==1.6.1
+home-assistant-intents==2024.3.12
