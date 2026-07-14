@@ -12,6 +12,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.13"
+          # Pinned to match the pytest-homeassistant-custom-component /
+          # homeassistant / hassil versions in requirements_test.txt, which
+          # are pinned to an old HA core whose deps (numpy 1.26.0) predate
+          # Python 3.13 wheel support.
+          python-version: "3.11"
       - run: pip install -r requirements_test.txt
       - run: pytest
