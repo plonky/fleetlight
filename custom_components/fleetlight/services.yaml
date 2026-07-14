@@ -14,6 +14,7 @@ start_effect:
         select:
           options:
             - wave
+            - thunderstorm
     params:
       name: Parameters
       description: >

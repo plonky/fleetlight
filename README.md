@@ -52,6 +52,11 @@ still to come.
 - **wave** — a brightness peak that travels along the zone's light order
   and loops continuously. Wave width scales with light count, so it reads
   as one coherent wave whether the zone has 3 lights or 30.
+- **thunderstorm** — most lights flicker dim blue on independent phases;
+  lights occasionally flash white/pale yellow at random, simulating
+  lightning. Timing and light selection are randomized per run. The number
+  of simultaneous flashes scales with light count rather than staying a
+  fixed absolute number.
 
 ## Installation
 
